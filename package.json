@@ -1,0 +1,16 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo run clean && rm -rf .turbo",
+    "clean:deep": "pnpm run clean && pnpm -r exec rm -rf node_modules && rm -rf node_modules"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "devDependencies": {
+    "turbo": "^2.7.4"
+  }
+}
